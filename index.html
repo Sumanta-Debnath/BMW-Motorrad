@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Motorworks</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="bike">
+        <nav>
+            <img src="logo.png" alt="logo" class="logo">
+        </nav>
+        <div class="content">
+            <h2>BMW</h2>
+            <h1>G 310 R</h1>
+            <p>
+                The G 310 R engine generates a power of 34 PS @ 9500 rpm and a torque 
+                of 28 Nm @ 7500 rpm. The claimed mileage of G 310 R is 32.46 kmpl.
+            </p>
+            <h3>Choose your colour</h3>
+            <div class="colour-select">
+                <div id="red"></div>
+                <div id="blue"></div>
+                <div id="black"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let redBtn = document.getElementById("red");
+        let blueBtn = document.getElementById("blue");
+        let blackBtn = document.getElementById("black");
+        let bikeBtn = document.getElementById("bike");
+
+        redBtn.onclick = function(){
+            bike.style.backgroundImage="url('red.png')";
+        }
+        blueBtn.onclick = function(){
+            bike.style.backgroundImage= "url('blue.png')";
+        }
+        blackBtn.onclick = function(){
+            bike.style.backgroundImage= "url('black.png')";
+        }
+    </script>
+</body>
+</html>
